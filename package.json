@@ -32,5 +32,9 @@
   "lint-staged": {
     "*.{js,ts,vue}": "eslint --fix",
     "*.{js,ts,vue,json,css,md}": "prettier --write"
+  },
+  "volta": {
+    "node": "20.11.0",
+    "pnpm": "8.14.1"
   }
 }
