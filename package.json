@@ -9,7 +9,8 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint --ext .js,.ts,.vue --fix --ignore-path .gitignore .",
-    "format": "prettier --write --ignore-path .gitignore ."
+    "format": "prettier --write --ignore-path .gitignore .",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config-typescript": "^12.1.0",
@@ -20,10 +21,16 @@
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-nuxt": "^4.0.0",
     "eslint-plugin-vue": "^9.20.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.2.0",
     "nuxt": "^3.9.1",
     "prettier": "^3.2.2",
     "prettier-plugin-tailwindcss": "^0.5.11",
     "vue": "^3.4.10",
     "vue-router": "^4.2.5"
+  },
+  "lint-staged": {
+    "*.{js,ts,vue}": "eslint --fix",
+    "*.{js,ts,vue,json,css,md}": "prettier --write"
   }
 }
