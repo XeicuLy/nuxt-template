@@ -16,6 +16,7 @@
     "@nuxtjs/eslint-config-typescript": "^12.1.0",
     "@typescript-eslint/eslint-plugin": "^6.19.0",
     "@typescript-eslint/parser": "^6.19.0",
+    "autoprefixer": "^10.4.16",
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.29.1",
@@ -24,8 +25,10 @@
     "husky": "^8.0.3",
     "lint-staged": "^15.2.0",
     "nuxt": "^3.9.1",
+    "postcss": "^8.4.33",
     "prettier": "^3.2.2",
     "prettier-plugin-tailwindcss": "^0.5.11",
+    "tailwindcss": "^3.4.1",
     "vue": "^3.4.10",
     "vue-router": "^4.2.5"
   },
