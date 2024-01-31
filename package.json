@@ -13,7 +13,9 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@nuxt/ui": "^2.12.0"
+    "@nuxt/ui": "^2.12.0",
+    "@pinia/nuxt": "^0.5.1",
+    "pinia": "^2.1.7"
   },
   "devDependencies": {
     "@nuxt/types": "^2.17.3",
@@ -40,6 +42,9 @@
   "lint-staged": {
     "*.{js,ts,vue}": "eslint --fix",
     "*.{js,ts,vue,json,css,md}": "prettier --write"
+  },
+  "overrides": {
+    "vue": "latest"
   },
   "volta": {
     "node": "20.11.0",
