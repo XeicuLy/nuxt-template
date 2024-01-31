@@ -2,7 +2,7 @@
   // https://nuxt.com/docs/guide/concepts/typescript
   "extends": "./.nuxt/tsconfig.json",
   "compilerOptions": {
-    "types": ["@nuxt/types", "node", "vite/client", "@types/node"],
+    "types": ["@nuxt/types", "node", "vite/client", "@types/node", "@pinia/nuxt"],
     "target": "esnext",
     "module": "esnext",
     "strict": true,
