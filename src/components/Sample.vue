@@ -1,6 +1,11 @@
 <script setup lang="ts">
-const msg = ref('Hello World!');
+defineProps({
+  count: {
+    type: Number,
+    required: true,
+  },
+});
 </script>
 <template>
-  <div>{{ msg }}</div>
+  <div>{{ count }}</div>
 </template>
