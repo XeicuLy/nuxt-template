@@ -30,6 +30,7 @@ module.exports = {
   plugins: ['@typescript-eslint', 'vue', 'import'],
   rules: {
     'vue/multi-word-component-names': 'off',
+    'no-console': 'off',
     'import/order': [
       'warn',
       {
