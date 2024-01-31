@@ -2,20 +2,19 @@
 
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  srcDir: 'src',
+  srcDir: 'src/',
   ssr: true,
   modules: ['@nuxt/ui'],
+  components: [
+    {
+      path: '@/components',
+      pathPrefix: false,
+    },
+  ],
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
-    },
-  },
-  vite: {
-    resolve: {
-      alias: {
-        '@': '/src',
-      },
     },
   },
 });
