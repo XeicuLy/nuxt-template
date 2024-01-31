@@ -1,10 +1,12 @@
 <script setup lang="ts">
-import Button from '~/components/ui/Button.vue';
+const handleClick = () => {
+  console.log('Click');
+};
 </script>
 <template>
   <section>
     <div>こんにちは</div>
-    <Button>ボタン</Button>
+    <UButton @click="handleClick">ボタン</UButton>
     <Sample />
   </section>
 </template>
